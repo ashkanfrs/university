@@ -1,0 +1,20 @@
+version: "3"
+services:
+  database:
+    image: mysql
+    ports:
+      - "3307:3306"
+    container_name: mysqldb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: University
+  spring-app:
+    image: spring-project
+    ports:
+      - "8080:8080"
+    container_name: spring-project
+    environment:
+      MYSQL_HOST: mysqldb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_PORT: 3306

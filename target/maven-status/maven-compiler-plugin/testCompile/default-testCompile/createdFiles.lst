@@ -1,0 +1,3 @@
+org\example\spring_project\integration\IntegrationTest.class
+org\example\spring_project\service\CourseServiceTest.class
+org\example\spring_project\SpringProjectApplicationTests.class
